@@ -2,9 +2,9 @@
 Contributors: temperal
 Tags: photosynth, temperal, image, processing, management, optimization
 Requires at least: 6.0
-Tested up to: 6.4.1
+Tested up to: 6.4.3
 Stable tag: 0.9
-License: GPLv2 or later
+License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Temperal PhotoSynth is the easiest no-code solution to optimize and transform images directly in markup.
@@ -28,20 +28,22 @@ Visit https://www.temperal.co/ to obtain a free key. Paste the key in Settings -
 Use the shortcode `[photosynth-img url="..." other_attribs...]`
 
 The following optional attributes are available:
-* adaptivehistogram = 0.01 - 100.0
+* adaptivehistogram = 0 - 100
 * blur = 0.2 - 20.0
+* brightness = 0.0 - 20.0
 * crop = Left,Top,Right,Bottom (comma separated int percentages 0-99)
-* style: CSS style (defaults to 'display: block').
+* format: "avif", "gif", "jpeg", "png", "tiff", "webp" (default: webp)
 * gamma = 1.0 - 3.0
 * greyscale = true / false
-* height = 1 - 10000 (omit width to preserve aspect ratio)
+* height = 1 - 5000 (omit width to preserve aspect ratio)
 * hue = 0.0 - 180.0
 * lightness = 0.0 - 200.0
 * normalize = Lower,Upper (comma separated ints 1-99)
 * saturation = 0.0 - 20.0
 * sharpen = 0.1 - 10.0
+* style: CSS style (defaults to 'display: block').
 * url = URL of the source image
-* width = 1 - 10000 (omit height to preserve aspect ratio)
+* width = 1 - 5000 (omit height to preserve aspect ratio)
 
 = How to uninstall the plugin? =
  

@@ -3,7 +3,7 @@
 * Plugin Name: photosynth
 * Plugin URI: https://temperal.co/
 * Description: Temperal PhotoSynth: no-code image processing
-* Version: 0.9
+* Version: 1.0
 * Author: temperal
 * Author URI: https://github.com/temperalco/
 * License: GPLv2
@@ -31,7 +31,8 @@ function photosynth_img($attributes, $content, $shortcode_name) {
   if (isset($attributes['style'])) {
     $style = $attributes['style'];
   }
-  $imageUrl = "<img style='{$style}' src='{$psUrl}/u={$url},k={$key}";
+  $onerror = "this.onerror=null;this.src='{$url}'";
+  $imageUrl = "<img style='{$style}' onerror=\"$onerror\" src='{$psUrl}/u={$url},k={$key}";
 
   if (isset($attributes['adaptivehistogram'])) {
     $adaptivehistogram = $attributes['adaptivehistogram'];

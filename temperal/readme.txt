@@ -1,9 +1,9 @@
 === Temperal PhotoSynth ===
 Contributors: temperal
-Tags: photosynth, temperal, image, processing, management, optimization
-Requires at least: 6.0
+Tags: photosynth, temperal, image, optimization, transform
+Requires at least: 5.0
 Tested up to: 6.4.3
-Stable tag: 0.9
+Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,3 +52,5 @@ Simply deactivate and delete the plugin.
 == Changelog ==
 = 0.9 =
 * Plugin released.
+= 1.0 =
+* Add img fallback.

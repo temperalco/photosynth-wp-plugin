@@ -3,7 +3,7 @@
 * Plugin Name: photosynth
 * Plugin URI: https://temperal.co/
 * Description: Temperal PhotoSynth: no-code image processing
-* Version: 1.0
+* Version: 1.0.1
 * Author: temperal
 * Author URI: https://github.com/temperalco/
 * License: GPLv2
@@ -94,6 +94,13 @@ function photosynth_img($attributes, $content, $shortcode_name) {
       return "Normalize {$normalize} must be ints '#,#' from 1-99";
     }
     $imageUrl .= ",n={$normalize}";
+  }
+  if (isset($attributes['rotate'])) {
+    $rotate = $attributes['rotate'];
+    if (!photosynth_validateRange($rotate, -360, 360, true)) {
+      return "Rotate {$rotate} must be a float from -360 to 360";
+    }
+    $imageUrl .= ",r={$rotate}";
   }
   if (isset($attributes['saturation'])) {
     $saturation = $attributes['saturation'];

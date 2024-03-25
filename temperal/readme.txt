@@ -3,7 +3,7 @@ Contributors: temperal
 Tags: photosynth, temperal, image, optimization, transform
 Requires at least: 5.0
 Tested up to: 6.4.3
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,3 +54,5 @@ Simply deactivate and delete the plugin.
 * Plugin released.
 = 1.0 =
 * Add img fallback.
+= 1.0.1 =
+* Add rotate param.
